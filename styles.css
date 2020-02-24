@@ -1,3 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
 body {
   background: #fff;
+  background-image: url(./assets/background.svg);
 }
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  width: 380px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.main-body{
+  margin:0 auto;
+  width: 60%;
+}
+
+.root-center{
+  display:flex; 
+  flex-wrap: wrap; 
+  justify-content:center;
+}
+
+.card-img {
+  width: 16vh;
+  height: 16vh;
+  margin: 8px;
+  position:relative;
+}
+
+.card-img img{
+  width:100%;
+  height:100%;
+}
+
+.card-img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hover-card {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width:100%;
+  height:100%;
+  opacity: 0;
+  transition: 0.2s ease;
+  background: rgba(0, 0, 0, 0.4);
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.hover-card:hover{
+  opacity: 1;
+}
+.hover-card .hover-card-title{
+  color:#FFF;
+  opacity: 0.8;
+  font-size: 12px;
+  line-height: 1.3;
+  font-family: 'Tahoma', sans-serif;
+}
+.hover-card .hover-card-title ul{
+  list-style-type: none;
+  text-align:center;
+}
+
+.button {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display:flex; 
+  justify-content:center
+}
+
+.myButton {
+	background-color:#e84888;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:11px 22px;
+	text-decoration:none;
+	text-shadow:-1px 2px 2px #e84888;
+}
+.myButton:hover {
+	background-color:#f5ce31;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
